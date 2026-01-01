@@ -75,6 +75,11 @@ const Navbar = () => {
               Blogs
             </Link>
           </li>
+          <li>
+            <Link to="/aboutus" className="hover:text-blue-600 transition">
+              About Us
+            </Link>
+          </li>
 
           <li>
             <Link to="/contact" className="hover:text-blue-600 transition">
