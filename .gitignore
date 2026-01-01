@@ -1,4 +1,18 @@
-node_modules
+# dependencies
+node_modules/
+**/node_modules/
+
+# build
+dist/
+build/
+
+# cache
+.cache/
+**/.cache/
+
+# env
 .env
-dist
-build
+.env.local
+
+# OS
+.DS_Store
