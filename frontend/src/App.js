@@ -5,6 +5,7 @@ import AppDevelopment from "./pages/services/app-development/AppDevelopment";
 import WebDevelopment from "./pages/services/web-development/WebDevelopment";
 import CustomSoftwareDevelopment from "./pages/services/custom-software/CustomSoftwareDevelopment";
 import Aboutus from "./pages/about/aboutus";
+import Contactus from "./pages/contact/contactus";
 
 
 function App() {
@@ -29,7 +30,12 @@ function App() {
           path="/about"
           element={<Aboutus />}
         />
+        <Route
+          path="/contact"
+          element={<Contactus />}
+        />
       </Routes>
+
 
 
     </Router>
