@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 
 import AppDevelopment from "./pages/services/app-development/AppDevelopment";
 import WebDevelopment from "./pages/services/web-development/WebDevelopment";
+import CustomSoftwareDevelopment from "./pages/services/custom-software/CustomSoftwareDevelopment";
 
 function App() {
   return (
@@ -18,7 +19,12 @@ function App() {
           path="/services/web-development"
           element={<WebDevelopment />}
         />
+        <Route
+          path="/services/custom-software"
+          element={<CustomSoftwareDevelopment />}
+        />
       </Routes>
+
     </Router>
   );
 }

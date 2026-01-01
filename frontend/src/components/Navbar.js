@@ -43,6 +43,15 @@ const Navbar = () => {
             >
               <li>
                 <Link
+                  to="/services/custom-software"
+                  className="block px-5 py-3 hover:bg-gray-100"
+                >
+                  Custom Software Development
+                </Link>
+              </li>
+              <li/>
+              <li>
+                <Link
                   to="/services/app-development"
                   className="block px-5 py-3 hover:bg-gray-100"
                 >
