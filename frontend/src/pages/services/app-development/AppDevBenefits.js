@@ -10,7 +10,7 @@ const AppDevBenefits = () => {
 
         {/* Item */}
         <div className="mb-16">
-          <h3 className="text-sm font-extrabold text-red-600 tracking-widest mb-5 hover:text-blue-600 transition">
+          <h3 className="text-sm font-extrabold text-blue-600 tracking-widest mb-5 hover:text-blue-800 transition">
             FULLY TAILORED
           </h3>
           <p className="text-gray-700 text-lg leading-relaxed">
@@ -24,7 +24,7 @@ const AppDevBenefits = () => {
 
         {/* Item */}
         <div className="mb-16">
-          <h3 className="text-sm font-extrabold text-red-600 tracking-widest mb-5 hover:text-blue-600 transition">
+          <h3 className="text-sm font-extrabold text-blue-600 tracking-widest mb-5 hover:text-blue-800 transition">
             FLEXIBILITY
           </h3>
           <p className="text-gray-700 text-lg leading-relaxed">
@@ -37,7 +37,7 @@ const AppDevBenefits = () => {
 
         {/* Item */}
         <div className="mb-16">
-          <h3 className="text-sm font-extrabold text-red-600 tracking-widest mb-5 hover:text-blue-600 transition">
+          <h3 className="text-sm font-extrabold text-blue-600 tracking-widest mb-5 hover:text-blue-800 transition">
             LEARNING CURVE
           </h3>
           <p className="text-gray-700 text-lg leading-relaxed">
@@ -49,7 +49,7 @@ const AppDevBenefits = () => {
 
         {/* Item */}
         <div className="mb-16">
-          <h3 className="text-sm font-extrabold text-red-600 tracking-widest mb-5 hover:text-blue-600 transition">
+          <h3 className="text-sm font-extrabold text-blue-600 tracking-widest mb-5 hover:text-blue-800 transition">
             SECURITY
           </h3>
           <p className="text-gray-700 text-lg leading-relaxed">
@@ -61,7 +61,7 @@ const AppDevBenefits = () => {
 
         {/* Item */}
         <div className="mb-16">
-          <h3 className="text-sm font-extrabold text-red-600 tracking-widest mb-5 hover:text-blue-600 transition">
+          <h3 className="text-sm font-extrabold text-blue-600 tracking-widest mb-5 hover:text-blue-800 transition">
             COMPLIANCE
           </h3>
           <p className="text-gray-700 text-lg leading-relaxed">
@@ -73,7 +73,7 @@ const AppDevBenefits = () => {
 
         {/* Item */}
         <div className="mb-16">
-          <h3 className="text-sm font-extrabold text-red-600 tracking-widest mb-5 hover:text-blue-600 transition">
+          <h3 className="text-sm font-extrabold text-blue-600 tracking-widest mb-5 hover:text-blue-800 transition">
             INTEGRATION
           </h3>
           <p className="text-gray-700 text-lg leading-relaxed">
@@ -85,7 +85,7 @@ const AppDevBenefits = () => {
 
         {/* Item */}
         <div className="mb-24">
-          <h3 className="text-sm font-extrabold text-red-600 tracking-widest mb-5 hover:text-blue-600 transition">
+          <h3 className="text-sm font-extrabold text-blue-600 tracking-widest mb-5 hover:text-blue-800 transition">
             ADVANCED TECHNOLOGY
           </h3>
           <p className="text-gray-700 text-lg leading-relaxed">
@@ -99,7 +99,7 @@ const AppDevBenefits = () => {
         <div>
           <a
             href="#process"
-            className="inline-block border-2 border-gray-900 px-12 py-4 font-bold text-gray-900 hover:bg-blue-600 hover:border-blue-600 hover:text-white transition"
+            className="inline-block border-2 border-blue-600 px-12 py-4 font-bold text-blue-600 hover:bg-blue-600 hover:border-blue-600 hover:text-white transition"
           >
             Click here to know more about our Mobile App Development Process
           </a>

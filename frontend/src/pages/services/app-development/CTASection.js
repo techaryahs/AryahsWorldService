@@ -12,7 +12,7 @@ const CTASection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-red-600 uppercase tracking-widest font-semibold mb-6"
+          className="text-blue-600 uppercase tracking-widest font-semibold mb-6"
         >
           Work with the pro website design & website development team
         </motion.p>
@@ -40,12 +40,12 @@ const CTASection = () => {
         >
           <button
             className="
-              border-2 border-red-600
-              text-red-600
+              border-2 border-blue-600
+              text-blue-600
               px-10 py-4
               font-semibold
               transition-all duration-300
-              hover:bg-red-600 hover:text-white
+              hover:bg-blue-600 hover:text-white
             "
           >
             Get started

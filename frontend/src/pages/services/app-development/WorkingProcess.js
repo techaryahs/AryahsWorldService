@@ -63,37 +63,35 @@ const WorkingProcess = () => {
         Our Working Process
       </h2>
 
-      {/* Hero Image */}
       {/* Hero Section */}
-<div className="w-full bg-gradient-to-r from-indigo-500 to-indigo-600 py-20 mb-28">
-  <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
-    
-    {/* Text */}
-    <div className="text-white">
-      <p className="text-xl mb-4">We have</p>
+      <div className="w-full bg-gradient-to-r from-blue-600 to-blue-700 py-20 mb-28">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+          
+          {/* Text */}
+          <div className="text-white">
+            <p className="text-xl mb-4">We have</p>
 
-      <div className="inline-block bg-black px-6 py-3 mb-6">
-        <h3 className="text-3xl md:text-4xl font-extrabold tracking-wide">
-          THE ULTIMATE SOLUTION
-        </h3>
+            <div className="inline-block bg-black px-6 py-3 mb-6">
+              <h3 className="text-3xl md:text-4xl font-extrabold tracking-wide">
+                THE ULTIMATE SOLUTION
+              </h3>
+            </div>
+
+            <p className="text-2xl md:text-3xl font-semibold">
+              for your company's growth
+            </p>
+          </div>
+
+          {/* Image */}
+          <div className="flex justify-center md:justify-end">
+            <img
+              src={workProcessImg}
+              alt="Working Process"
+              className="max-w-md w-full"
+            />
+          </div>
+        </div>
       </div>
-
-      <p className="text-2xl md:text-3xl font-semibold">
-        for your company's growth
-      </p>
-    </div>
-
-    {/* Image */}
-    <div className="flex justify-center md:justify-end">
-      <img
-        src={workProcessImg}
-        alt="Working Process"
-        className="max-w-md w-full"
-      />
-    </div>
-  </div>
-</div>
-
 
       {/* Timeline */}
       <div className="relative max-w-7xl mx-auto px-6">
@@ -108,9 +106,7 @@ const WorkingProcess = () => {
             transition={{ duration: 0.6, delay: index * 0.1 }}
             viewport={{ once: true }}
             className={`relative flex items-center mb-28 ${
-              step.side === "left"
-                ? "flex-row"
-                : "flex-row-reverse"
+              step.side === "left" ? "flex-row" : "flex-row-reverse"
             }`}
           >
             {/* Content */}
@@ -125,7 +121,7 @@ const WorkingProcess = () => {
 
             {/* Icon */}
             <div className="absolute left-1/2 -translate-x-1/2 z-10">
-              <div className="w-14 h-14 rounded-full bg-white border-4 border-red-600 flex items-center justify-center text-red-600 text-xl shadow-md">
+              <div className="w-14 h-14 rounded-full bg-white border-4 border-blue-600 flex items-center justify-center text-blue-600 text-xl shadow-md">
                 {step.icon}
               </div>
             </div>

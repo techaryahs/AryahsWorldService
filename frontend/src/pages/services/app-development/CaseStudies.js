@@ -32,7 +32,9 @@ const CaseStudies = () => {
     <section className="py-24 bg-white">
       {/* Heading */}
       <div className="max-w-7xl mx-auto px-6 mb-16">
-        <h2 className="text-5xl font-extrabold mb-4">Case Studies</h2>
+        <h2 className="text-5xl font-extrabold mb-4 text-black">
+          Case Studies
+        </h2>
         <p className="text-gray-600 max-w-3xl text-lg">
           We have developed 100+ custom software solutions, helping startups and
           enterprises solve complex challenges with scalable and future-ready
@@ -69,7 +71,7 @@ const CaseStudies = () => {
               <div
                 className="
                   absolute inset-0
-                  bg-emerald-400/90
+                  bg-blue-600/90
                   opacity-0
                   group-hover:opacity-100
                   transition-all duration-500
@@ -87,7 +89,7 @@ const CaseStudies = () => {
 
             {/* Content */}
             <div className="mt-6">
-              <h3 className="text-2xl font-bold text-red-600">
+              <h3 className="text-2xl font-bold text-blue-600">
                 {project.title}
               </h3>
 
@@ -107,10 +109,10 @@ const CaseStudies = () => {
       <div className="flex justify-center mt-20">
         <button
           className="
-            border-2 border-black
+            border-2 border-blue-600 text-blue-600
             px-10 py-4
             font-semibold
-            hover:bg-black hover:text-white
+            hover:bg-blue-600 hover:text-white
             transition-all duration-300
           "
         >
@@ -129,7 +131,7 @@ const IconBox = ({ icon }) => {
         rounded-full
         bg-white
         flex items-center justify-center
-        text-emerald-500
+        text-blue-600
         text-xl
         transform scale-0
         group-hover:scale-100

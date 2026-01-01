@@ -24,7 +24,7 @@ const WebDevelopmentServices = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold text-red-600 mb-8">
+            <h2 className="text-4xl font-bold text-blue-600 mb-8">
               Website Development Services
             </h2>
 
@@ -32,7 +32,7 @@ const WebDevelopmentServices = () => {
               <p>
                 A user-friendly website design should be accompanied by a
                 scalable website development architecture. Our{" "}
-                <span className="font-semibold">
+                <span className="font-semibold text-blue-600">
                   website development services
                 </span>{" "}
                 are designed to create robust, secure, and scalable websites
@@ -71,43 +71,38 @@ const WebDevelopmentServices = () => {
         {/* SERVICES LIST */}
         <div className="mt-24 space-y-16 max-w-5xl">
 
-          <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <h4 className="text-sm font-bold uppercase tracking-wider text-red-600 mb-4">
-              Static Website Development
-            </h4>
-            <p className="text-gray-700 leading-relaxed">
-              A static website consists of web pages with fixed content, making
-              them ideal for organizational, institutional, or personal
-              websites. These websites are perfect for showcasing brands,
-              products, or services with minimal data and quick loading times.
-              We specialize in creating high-quality static websites that
-              provide a secure and fast online presence.
-            </p>
-          </motion.div>
-
-          <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <h4 className="text-sm font-bold uppercase tracking-wider text-red-600 mb-4">
-              Custom Website / Dynamic Website Development
-            </h4>
-            <p className="text-gray-700 leading-relaxed">
-              A dynamic website generates content in real-time based on user
-              interactions or other triggers, creating a more interactive and
-              engaging experience. We excel in creating dynamic websites that
-              offer rich functionality and a personalized user experience.
-            </p>
-          </motion.div>
-
-          <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <h4 className="text-sm font-bold uppercase tracking-wider text-red-600 mb-4">
-              E-Commerce Development
-            </h4>
-            <p className="text-gray-700 leading-relaxed">
-              E-commerce development involves creating online platforms where
-              businesses can sell products or services. We develop secure,
-              scalable, and user-friendly e-commerce solutions with features
-              like product listings, shopping carts, and payment gateways.
-            </p>
-          </motion.div>
+          {[
+            {
+              title: "Static Website Development",
+              desc:
+                "A static website consists of web pages with fixed content, making them ideal for organizational, institutional, or personal websites. These websites are perfect for showcasing brands, products, or services with minimal data and quick loading times. We specialize in creating high-quality static websites that provide a secure and fast online presence.",
+            },
+            {
+              title: "Custom Website / Dynamic Website Development",
+              desc:
+                "A dynamic website generates content in real-time based on user interactions or other triggers, creating a more interactive and engaging experience. We excel in creating dynamic websites that offer rich functionality and a personalized user experience.",
+            },
+            {
+              title: "E-Commerce Development",
+              desc:
+                "E-commerce development involves creating online platforms where businesses can sell products or services. We develop secure, scalable, and user-friendly e-commerce solutions with features like product listings, shopping carts, and payment gateways.",
+            },
+          ].map((item, index) => (
+            <motion.div
+              key={index}
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              <h4 className="text-sm font-bold uppercase tracking-wider text-blue-600 hover:text-blue-800 transition-colors duration-300 mb-4">
+                {item.title}
+              </h4>
+              <p className="text-gray-700 leading-relaxed">
+                {item.desc}
+              </p>
+            </motion.div>
+          ))}
         </div>
 
         {/* CTA */}
@@ -118,7 +113,7 @@ const WebDevelopmentServices = () => {
           viewport={{ once: true }}
           className="mt-24 flex justify-center"
         >
-          <button className="border-2 border-black px-10 py-4 font-semibold hover:bg-black hover:text-white transition-all duration-300">
+          <button className="border-2 border-blue-600 text-blue-600 px-10 py-4 font-semibold hover:bg-blue-600 hover:text-white transition-all duration-300">
             Click here to know more about our Website Development Process
           </button>
         </motion.div>

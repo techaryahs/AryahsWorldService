@@ -49,7 +49,7 @@ const TechStack = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-red-600 font-bold uppercase mb-6">
+            <h4 className="text-blue-600 font-bold uppercase mb-6">
               Back-End Programming Languages
             </h4>
             <div className="flex gap-10">
@@ -66,7 +66,7 @@ const TechStack = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-red-600 font-bold uppercase mb-6">
+            <h4 className="text-blue-600 font-bold uppercase mb-6">
               Front-End Programming Languages
             </h4>
             <div className="flex gap-10">
@@ -85,7 +85,7 @@ const TechStack = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-red-600 font-bold uppercase mb-6">
+            <h4 className="text-blue-600 font-bold uppercase mb-6">
               Mobile
             </h4>
             <div className="flex gap-10">
@@ -102,7 +102,7 @@ const TechStack = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-red-600 font-bold uppercase mb-6">
+            <h4 className="text-blue-600 font-bold uppercase mb-6">
               Databases
             </h4>
             <div className="flex gap-10">
@@ -118,7 +118,7 @@ const TechStack = () => {
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-red-600 font-bold uppercase mb-6">
+            <h4 className="text-blue-600 font-bold uppercase mb-6">
               DevOps
             </h4>
             <div className="flex gap-10">
@@ -134,7 +134,7 @@ const TechStack = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-red-600 font-bold uppercase mb-6">
+            <h4 className="text-blue-600 font-bold uppercase mb-6">
               Cloud
             </h4>
             <div className="flex gap-10">

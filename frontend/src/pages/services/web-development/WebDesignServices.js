@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import designImg from "../../../assets/webDesign.jpg"; // replace with your image
+import designImg from "../../../assets/webDesign.jpg";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -24,7 +24,7 @@ const WebDesignServices = () => {
             whileInView="visible"
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl font-bold text-red-600 mb-8">
+            <h2 className="text-4xl font-bold text-blue-600 mb-8">
               Website Design Services
             </h2>
 
@@ -47,7 +47,10 @@ const WebDesignServices = () => {
               </p>
 
               <p>
-                Our <span className="font-semibold">website designing services</span>{" "}
+                Our{" "}
+                <span className="font-semibold text-blue-600">
+                  website designing services
+                </span>{" "}
                 are centered on creating the best visual experience for your
                 customers.
               </p>
@@ -76,58 +79,48 @@ const WebDesignServices = () => {
         {/* SERVICES LIST */}
         <div className="mt-24 space-y-16 max-w-5xl">
 
-          {/* ITEM */}
-          <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <h4 className="text-sm font-bold uppercase tracking-wider text-red-600 hover:text-blue-600 transition-colors duration-300 mb-4">
-              Responsive Design
-            </h4>
-            <p className="text-gray-700 leading-relaxed">
-              A responsive design adapts to different screen sizes and
-              orientations, providing a fantastic user experience across
-              desktops, tablets, and smartphones.
-            </p>
-          </motion.div>
-
-          <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <h4 className="text-sm font-bold uppercase tracking-wider text-red-600 hover:text-blue-600 transition-colors duration-300 mb-4">
-              Custom Design
-            </h4>
-            <p className="text-gray-700 leading-relaxed">
-              Custom designs are tailored to business objectives, brand
-              requirements, and client vision to ensure your website stands out
-              from the competition.
-            </p>
-          </motion.div>
-
-          <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <h4 className="text-sm font-bold uppercase tracking-wider text-red-600 hover:text-blue-600 transition-colors duration-300 mb-4">
-              User Experience (UX)
-            </h4>
-            <p className="text-gray-700 leading-relaxed">
-              Effective UX design includes clear navigation and organized
-              content that guides users effortlessly while reducing friction.
-            </p>
-          </motion.div>
-
-          <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <h4 className="text-sm font-bold uppercase tracking-wider text-red-600 hover:text-blue-600 transition-colors duration-300 mb-4">
-              Graphic Design
-            </h4>
-            <p className="text-gray-700 leading-relaxed">
-              High-quality graphics, icons, and infographics enhance
-              communication and ensure your message is visually compelling.
-            </p>
-          </motion.div>
-
-          <motion.div variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}>
-            <h4 className="text-sm font-bold uppercase tracking-wider text-red-600 hover:text-blue-600 transition-colors duration-300 mb-4">
-              Branding
-            </h4>
-            <p className="text-gray-700 leading-relaxed">
-              Consistent branding across your website builds trust and ensures
-              your site reflects your business identity clearly.
-            </p>
-          </motion.div>
+          {[
+            {
+              title: "Responsive Design",
+              desc:
+                "A responsive design adapts to different screen sizes and orientations, providing a fantastic user experience across desktops, tablets, and smartphones.",
+            },
+            {
+              title: "Custom Design",
+              desc:
+                "Custom designs are tailored to business objectives, brand requirements, and client vision to ensure your website stands out from the competition.",
+            },
+            {
+              title: "User Experience (UX)",
+              desc:
+                "Effective UX design includes clear navigation and organized content that guides users effortlessly while reducing friction.",
+            },
+            {
+              title: "Graphic Design",
+              desc:
+                "High-quality graphics, icons, and infographics enhance communication and ensure your message is visually compelling.",
+            },
+            {
+              title: "Branding",
+              desc:
+                "Consistent branding across your website builds trust and ensures your site reflects your business identity clearly.",
+            },
+          ].map((item, index) => (
+            <motion.div
+              key={index}
+              variants={fadeUp}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              <h4 className="text-sm font-bold uppercase tracking-wider text-blue-600 hover:text-blue-800 transition-colors duration-300 mb-4">
+                {item.title}
+              </h4>
+              <p className="text-gray-700 leading-relaxed">
+                {item.desc}
+              </p>
+            </motion.div>
+          ))}
         </div>
 
         {/* CTA */}
